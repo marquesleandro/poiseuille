@@ -91,8 +91,8 @@ start_time = time()
 
 # Linear Element
 if polynomial_option == 1:
- mesh_name = 'malha_poiseuille2D.msh'
- equation_number = 1
+ mesh_name = 'malha_poiseuille.msh'
+ equation_number = 3
 
  directory = search_file.Find(mesh_name)
  if directory == 'File not found':
@@ -105,8 +105,8 @@ if polynomial_option == 1:
 
 # Mini Element
 elif polynomial_option == 2:
- mesh_name = 'malha_poiseuille2D.msh'
- equation_number = 1
+ mesh_name = 'malha_poiseuille.msh'
+ equation_number = 3
 
  directory = search_file.Find(mesh_name)
  if directory == 'File not found':
@@ -118,9 +118,9 @@ elif polynomial_option == 2:
 
 # Quad Element
 elif polynomial_option == 3:
- mesh_name = 'malha_poiseuille2D_quad.msh'
- equation_number = 1
-
+ mesh_name = 'malha_poiseuille_quad.msh'
+ equation_number = 3
+ 
  directory = search_file.Find(mesh_name)
  if directory == 'File not found':
   sys.exit()
@@ -131,8 +131,8 @@ elif polynomial_option == 3:
 
 # Cubic Element
 elif polynomial_option == 4:
- mesh_name = 'malha_poiseuille2D_cubic.msh'
- equation_number = 1
+ mesh_name = 'malha_poiseuille_cubic.msh'
+ equation_number = 3
 
  directory = search_file.Find(mesh_name)
  if directory == 'File not found':
